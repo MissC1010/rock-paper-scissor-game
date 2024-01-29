@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(pictures/game.webp);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  margin: 10px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    #029c9c,
+    #015bb5
+  ); /* Adjust the gradient colors as needed */
+  color: #fff;
+}
+
+.display-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
+
+button {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+}
+
+#rock img {
+  width: 140px;
+  height: auto;
+  filter: grayscale(30%);
+}
+
+#paper img {
+  width: 100px;
+  height: auto;
+}
+
+#scissors img {
+  width: 100px;
+  height: auto;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-white);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: var(--transition);
+}
+.hide-preloader {
+  opacity: 0;
+  z-index: -999;
+  visibility: hidden;
+}
